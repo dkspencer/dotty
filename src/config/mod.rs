@@ -8,7 +8,6 @@ use std::{
 
 // External crate imports
 use anyhow::{Context, Error, Result};
-use clients::file_system::FileSystem;
 use colored::Colorize;
 use log::{self, LevelFilter};
 use log4rs::{
@@ -18,6 +17,9 @@ use log4rs::{
 };
 use serde::{Deserialize, Serialize};
 use toml;
+
+// Local module imports
+use crate::clients::file_system::FileSystem;
 
 // Submodules
 pub mod command;

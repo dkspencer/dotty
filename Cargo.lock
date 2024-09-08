@@ -253,15 +253,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "clients"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "async-trait",
- "tokio",
-]
-
-[[package]]
 name = "colorchoice"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -348,7 +339,6 @@ dependencies = [
  "async-trait",
  "clap",
  "cliclack",
- "clients",
  "colored",
  "crossterm",
  "home",

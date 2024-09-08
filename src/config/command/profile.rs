@@ -5,15 +5,17 @@ use std::sync::Arc;
 use anyhow::Result;
 use clap::{Parser, ValueEnum};
 use cliclack;
-use clients::{file_system::FileSystem, git::Git};
 use crossterm::style::{style, Stylize};
 
 // Local module imports
-use crate::config::{
-    wizard::{
-        list_profiles_wizard, new_profile_wizard, select_profiles_wizard, update_profile_wizard,
+use crate::{
+    clients::{file_system::FileSystem, git::Git},
+    config::{
+        wizard::{
+            list_profiles_wizard, new_profile_wizard, select_profiles_wizard, update_profile_wizard,
+        },
+        ConfigLoader, TomlConfig,
     },
-    ConfigLoader, TomlConfig,
 };
 
 #[derive(ValueEnum, Default, Debug, Clone)]

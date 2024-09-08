@@ -4,10 +4,10 @@ use std::sync::Arc;
 // External crate imports
 use anyhow::Result;
 use clap::{self, Parser};
-use clients::{file_system::FileSystemClient, git::GitClient};
 
 // Local module imports
 use dotty::cli::Cli;
+use dotty::clients::{file_system::FileSystemClient, git::GitClient};
 use dotty::config::{ConfigLoaderClient, TomlConfig};
 
 #[tokio::main]

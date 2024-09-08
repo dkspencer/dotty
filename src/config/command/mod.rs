@@ -4,12 +4,14 @@ use std::sync::Arc;
 // External crate imports
 use anyhow::Result;
 use clap::Subcommand;
-use clients::{file_system::FileSystem, git::Git};
 
 // Local module imports
-use crate::config::{
-    command::{profile::ProfileCommand, setup::SetupCommand},
-    ConfigLoader, TomlConfig,
+use crate::{
+    clients::{file_system::FileSystem, git::Git},
+    config::{
+        command::{profile::ProfileCommand, setup::SetupCommand},
+        ConfigLoader, TomlConfig,
+    },
 };
 
 // Submodules

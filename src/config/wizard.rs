@@ -4,12 +4,14 @@ use std::{collections::HashSet, sync::Arc};
 // External crate imports
 use anyhow::Result;
 use cliclack;
-use clients::git::Git;
 use crossterm::style::{style, Stylize};
 use log::LevelFilter;
 
 // Local module imports
-use crate::config::{ProfileConfig, ProfileId, TomlConfig};
+use crate::{
+    clients::git::Git,
+    config::{ProfileConfig, ProfileId, TomlConfig},
+};
 
 /// Guides the user through the initial setup of Dotty.
 ///

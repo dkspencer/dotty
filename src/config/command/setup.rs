@@ -4,10 +4,12 @@ use std::sync::Arc;
 // External crate imports
 use anyhow::Result;
 use clap::Parser;
-use clients::{file_system::FileSystem, git::Git};
 
 // Local module imports
-use crate::config::{wizard::initial_setup_wizard, ConfigLoader, TomlConfig};
+use crate::{
+    clients::{file_system::FileSystem, git::Git},
+    config::{wizard::initial_setup_wizard, ConfigLoader, TomlConfig},
+};
 
 /// Sets up the application configuration through an interactive wizard.
 #[derive(Parser, Debug)]

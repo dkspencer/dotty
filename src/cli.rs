@@ -4,10 +4,10 @@ use std::sync::Arc;
 // External crate imports
 use anyhow::Result;
 use clap::{Parser, Subcommand};
-use clients::{file_system::FileSystem, git::Git};
 
 // Local module imports
 use crate::{
+    clients::{file_system::FileSystem, git::Git},
     config::{command::Commands as ConfigCommands, ConfigLoader, TomlConfig},
     ui::cli::style,
 };
