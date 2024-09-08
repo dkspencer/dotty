@@ -2,7 +2,7 @@
   <img alt="Dotty Logo" src="https://github.com/dkspencer/dotty/raw/main/media/dotty-logo-placeholder.jpg" />
 </div>
 
-<h2 align="center">Dot your i's and cross your files; Dotty manages your configs with style ☕</h2>
+<h3 align="center">Dot your i's and cross your files; Dotty manages your configs with style ☕</h3>
 
 Dotty is a powerful command-line interface (CLI) tool designed to simplify the management of dotfiles with seamless Git integration. It offers a comprehensive suite of features to help users organize, version control, and synchronize their system configuration files across multiple machines or environments.
 
