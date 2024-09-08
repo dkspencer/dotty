@@ -1,6 +1,27 @@
 [package]
 name = "dotty"
+description = "A CLI tool for managing dotfiles with Git integration"
 version = "0.1.0"
 edition = "2021"
+authors = ["danielle <dkspencer>"]
 
 [dependencies]
+anstyle = "1.0.8"
+anyhow = "1.0.86"
+async-trait = "0.1.82"
+clap = { version = "4.5.17", features = ["cargo", "derive"] }
+cliclack = "0.3.4"
+clients = { version = "0.1.0", path = "clients" }
+colored = "2.1.0"
+crossterm = { version = "0.28.1", features = ["event-stream"] }
+home = "0.5.9"
+log = "0.4.22"
+log4rs = "1.3.0"
+serde = { version = "1.0.209", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["full", "macros"] }
+toml = "0.8.19"
+
+[dev-dependencies]
+mockall = "0.13.0"
+tempfile = "3.12.0"
+tokio-test = "0.4.4"
